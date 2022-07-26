@@ -14,3 +14,12 @@
 Нельзя пользоваться collections.Counter!
 """
 STR_VAL = 'python is the fastest-growing major programming language'
+
+
+def count_char(string):
+    string = string.replace(' ', '')
+    dict_string = {key: string.count(key) for key in string}
+    return dict_string
+
+
+print(count_char('python is the fastest-growing major programming language'))
